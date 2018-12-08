@@ -4,6 +4,8 @@ import (
 	"fmt"
 	"log"
 	"os"
+
+	sendgrid "github.com/iktakahiro/sendgrid-go"
 )
 
 // CreateaCampaign : Create a Campaign

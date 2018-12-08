@@ -2,9 +2,10 @@ package main
 
 import (
 	"fmt"
-	"github.com/sendgrid/sendgrid-go"
 	"log"
 	"os"
+
+	sendgrid "github.com/iktakahiro/sendgrid-go"
 )
 
 // SendSampleHelloMail demonstrates how to send a sample e-mail with a subject line

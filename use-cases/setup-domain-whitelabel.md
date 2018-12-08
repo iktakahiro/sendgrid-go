@@ -12,7 +12,7 @@ import (
 	"log"
 	"os"
 
-	"github.com/sendgrid/sendgrid-go"
+	"github.com/iktakahiro/sendgrid-go"
 )
 
 func main() {

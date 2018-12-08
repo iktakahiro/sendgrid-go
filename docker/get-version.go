@@ -2,7 +2,8 @@ package main
 
 import (
 	"fmt"
-	"github.com/sendgrid/sendgrid-go"
+
+	sendgrid "github.com/iktakahiro/sendgrid-go"
 )
 
 func main() {
