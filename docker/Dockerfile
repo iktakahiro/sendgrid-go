@@ -11,7 +11,7 @@ RUN sh ./install.sh && \
 # Get sendgrid-go
 RUN mkdir -p /go/src/github.com/sendgrid && \
 	cd /go/src/github.com/sendgrid && \
-	git clone https://www.github.com/sendgrid/sendgrid-go && \
+	git clone https://www.github.com/iktakahiro/sendgrid-go && \
 	cd sendgrid-go && \
 	go get
 

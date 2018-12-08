@@ -19,7 +19,7 @@ package main
 import (
   "os"
   "fmt"
-  "github.com/sendgrid/sendgrid-go"
+  "github.com/iktakahiro/sendgrid-go"
   "log"
 )
 
@@ -51,7 +51,7 @@ To use different version of sendgrid-go, mount them with `-v <host_dir>:<contain
 
 For instance, to use sendgrid-go v3.0.6:
 ```
-$ git clone https://github.com/sendgrid/sendgrid-go --branch v3.0.6
+$ git clone https://github.com/iktakahiro/sendgrid-go --branch v3.0.6
 $ realpath sendgrid-go
 /path/to/sendgrid-go
 $ docker run -it -v /path/to/sendgrid-go:/mnt/sendgrid-go \

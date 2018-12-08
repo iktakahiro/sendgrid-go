@@ -2,9 +2,10 @@ package main
 
 import (
 	"fmt"
-	"github.com/sendgrid/sendgrid-go"
 	"log"
 	"os"
+
+	sendgrid "github.com/iktakahiro/sendgrid-go"
 )
 
 // Returnsalistofallpartnersettings : Returns a list of all partner settings.

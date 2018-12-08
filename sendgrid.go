@@ -7,8 +7,8 @@ import (
 	"strconv"
 	"time"
 
+	"github.com/iktakahiro/sendgrid-go/helpers/mail"
 	"github.com/sendgrid/rest" // depends on version 2.2.0
-	"github.com/sendgrid/sendgrid-go/helpers/mail"
 )
 
 // Version is this client library's current version

@@ -5,8 +5,8 @@ package main
 
 import (
   "fmt"
-  "github.com/sendgrid/sendgrid-go"
-  "github.com/sendgrid/sendgrid-go/helpers/mail"
+  "github.com/iktakahiro/sendgrid-go"
+  "github.com/iktakahiro/sendgrid-go/helpers/mail"
   "os"
 )
 

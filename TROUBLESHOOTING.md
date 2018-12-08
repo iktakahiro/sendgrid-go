@@ -1,6 +1,6 @@
 If you have a non-library SendGrid issue, please contact our [support team](https://support.sendgrid.com).
 
-If you can't find a solution below, please open an [issue](https://github.com/sendgrid/sendgrid-go/issues).
+If you can't find a solution below, please open an [issue](https://github.com/iktakahiro/sendgrid-go/issues).
 
 
 ## Table of Contents
@@ -21,11 +21,11 @@ Please review [our guide](https://sendgrid.com/docs/Classroom/Send/v3_Mail_Send/
 <a name="v2"></a>
 ## Continue Using v2
 
-[Here](https://github.com/sendgrid/sendgrid-go/tree/0bf6332788d0230b7da84a1ae68d7531073200e1) is the last working version with v2 support.
+[Here](https://github.com/iktakahiro/sendgrid-go/tree/0bf6332788d0230b7da84a1ae68d7531073200e1) is the last working version with v2 support.
 
 Download:
 
-Click the "Clone or download" green button in [GitHub](https://github.com/sendgrid/sendgrid-go/tree/0bf6332788d0230b7da84a1ae68d7531073200e1) and choose download.
+Click the "Clone or download" green button in [GitHub](https://github.com/iktakahiro/sendgrid-go/tree/0bf6332788d0230b7da84a1ae68d7531073200e1) and choose download.
 
 <a name="testing"></a>
 ## Testing v3 /mail/send Calls Directly
@@ -79,12 +79,12 @@ if resp.StatusCode >= 400 {
 <a name="versions"></a>
 ## Versions
 
-We follow the MAJOR.MINOR.PATCH versioning scheme as described by [SemVer.org](http://semver.org). Therefore, we recommend that you always pin (or vendor) the particular version you are working with to your code and never auto-update to the latest version. Especially when there is a MAJOR point release, since that is guaranteed to be a breaking change. Changes are documented in the [CHANGELOG](https://github.com/sendgrid/sendgrid-go/blob/master/CHANGELOG.md) and [releases](https://github.com/sendgrid/sendgrid-go/releases) section.
+We follow the MAJOR.MINOR.PATCH versioning scheme as described by [SemVer.org](http://semver.org). Therefore, we recommend that you always pin (or vendor) the particular version you are working with to your code and never auto-update to the latest version. Especially when there is a MAJOR point release, since that is guaranteed to be a breaking change. Changes are documented in the [CHANGELOG](https://github.com/iktakahiro/sendgrid-go/blob/master/CHANGELOG.md) and [releases](https://github.com/iktakahiro/sendgrid-go/releases) section.
 
 <a name="environment"></a>
 ## Environment Variables and Your SendGrid API Key
 
-All of our examples assume you are using [environment variables](https://github.com/sendgrid/sendgrid-go#setup-environment-variables) to hold your SendGrid API key.
+All of our examples assume you are using [environment variables](https://github.com/iktakahiro/sendgrid-go#setup-environment-variables) to hold your SendGrid API key.
 
 If you choose to add your SendGrid API key directly (not recommended):
 

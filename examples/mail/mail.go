@@ -2,9 +2,10 @@ package main
 
 import (
 	"fmt"
-	"github.com/sendgrid/sendgrid-go"
 	"log"
 	"os"
+
+	sendgrid "github.com/iktakahiro/sendgrid-go"
 )
 
 // CreateabatchID : Create a batch ID
@@ -43,7 +44,7 @@ func ValidatebatchID() {
 
 // v3MailSend : v3 Mail Send
 // POST /mail/send
-// This endpoint has a helper, check it out [here](https://github.com/sendgrid/sendgrid-go/blob/master/helpers/mail/README.md).
+// This endpoint has a helper, check it out [here](https://github.com/iktakahiro/sendgrid-go/blob/master/helpers/mail/README.md).
 func v3MailSend() {
 	apiKey := os.Getenv("SENDGRID_API_KEY")
 	host := "https://api.sendgrid.com"
