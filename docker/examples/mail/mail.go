@@ -5,7 +5,7 @@ import (
 	"log"
 	"os"
 
-	sendgrid "github.com/iktakahiro/sendgrid-go"
+	sendgrid "github.com/iktakahiro/sendgrid-go/v4"
 )
 
 // SendSampleHelloMail demonstrates how to send a sample e-mail with a subject line

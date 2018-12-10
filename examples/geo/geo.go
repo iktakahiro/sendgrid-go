@@ -5,7 +5,7 @@ import (
 	"log"
 	"os"
 
-	sendgrid "github.com/iktakahiro/sendgrid-go"
+	sendgrid "github.com/iktakahiro/sendgrid-go/v4"
 )
 
 // Retrieveemailstatisticsbycountryandstateprovince : Retrieve email statistics by country and state/province.

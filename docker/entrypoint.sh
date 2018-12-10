@@ -3,9 +3,9 @@ clear
 
 # check for + link mounted libraries:
 if [ -d /mnt/sendgrid-go ]; then
-  rm -rf /go/src/github.com/iktakahiro/sendgrid-go
+  rm -rf /go/src/github.com/iktakahiro/sendgrid-go/v4
   `cd /go/src/github.com/sendgrid/ && ln -s /mnt/sendgrid-go && cd sendgrid-go && go get -v -d`
-  echo "Linked mounted sendgrid-go's code to /go/src/github.com/iktakahiro/sendgrid-go"
+  echo "Linked mounted sendgrid-go's code to /go/src/github.com/iktakahiro/sendgrid-go/v4"
 fi
 
 SENDGRID_GO_VERSION=$(go run get-version.go)

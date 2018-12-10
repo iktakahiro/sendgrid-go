@@ -2,11 +2,11 @@
 
 [![BuildStatus](https://travis-ci.org/sendgrid/sendgrid-go.svg?branch=master)](https://travis-ci.org/sendgrid/sendgrid-go)
 [![Email Notifications Badge](https://dx.sendgrid.com/badge/go)](https://dx.sendgrid.com/newsletter/go)
-[![Go Report Card](https://goreportcard.com/badge/github.com/iktakahiro/sendgrid-go)](https://goreportcard.com/report/github.com/iktakahiro/sendgrid-go)
-[![GoDoc](https://godoc.org/github.com/iktakahiro/sendgrid-go?status.svg)](https://godoc.org/github.com/iktakahiro/sendgrid-go)
+[![Go Report Card](https://goreportcard.com/badge/github.com/iktakahiro/sendgrid-go/v4)](https://goreportcard.com/report/github.com/iktakahiro/sendgrid-go/v4)
+[![GoDoc](https://godoc.org/github.com/iktakahiro/sendgrid-go/v4?status.svg)](https://godoc.org/github.com/iktakahiro/sendgrid-go/v4)
 [![MIT licensed](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.txt)
 [![Twitter Follow](https://img.shields.io/twitter/follow/sendgrid.svg?style=social&label=Follow)](https://twitter.com/sendgrid)
-[![GitHub contributors](https://img.shields.io/github/contributors/sendgrid/sendgrid-go.svg)](https://github.com/iktakahiro/sendgrid-go/graphs/contributors)
+[![GitHub contributors](https://img.shields.io/github/contributors/sendgrid/sendgrid-go.svg)](https://github.com/iktakahiro/sendgrid-go/v4/graphs/contributors)
 [![Open Source Helpers](https://www.codetriage.com/sendgrid/sendgrid-go/badges/users.svg)](https://www.codetriage.com/sendgrid/sendgrid-go)
 
 **NEW:** Subscribe to email [notifications](https://dx.sendgrid.com/newsletter/go) for releases and breaking changes.
@@ -15,7 +15,7 @@
 
 Version 3.X.X of this library provides full support for all SendGrid [Web API v3](https://sendgrid.com/docs/API_Reference/Web_API_v3/index.html) endpoints, including the new [v3 /mail/send](https://sendgrid.com/blog/introducing-v3mailsend-sendgrids-new-mail-endpoint).
 
-This library represents the beginning of a new path for SendGrid. We want this library to be community driven and SendGrid led. We need your help to realize this goal. To help make sure we are building the right things in the right order, we ask that you create [issues](https://github.com/iktakahiro/sendgrid-go/issues) and [pull requests](https://github.com/iktakahiro/sendgrid-go/blob/master/CONTRIBUTING.md) or simply upvote or comment on existing issues or pull requests.
+This library represents the beginning of a new path for SendGrid. We want this library to be community driven and SendGrid led. We need your help to realize this goal. To help make sure we are building the right things in the right order, we ask that you create [issues](https://github.com/iktakahiro/sendgrid-go/v4/issues) and [pull requests](https://github.com/iktakahiro/sendgrid-go/v4/blob/master/CONTRIBUTING.md) or simply upvote or comment on existing issues or pull requests.
 
 Please browse the rest of this README for further detail.
 
@@ -55,7 +55,7 @@ source ./sendgrid.env
 
 ## Install Package
 
-`go get github.com/iktakahiro/sendgrid-go`
+`go get github.com/iktakahiro/sendgrid-go/v4`
 
 ## Dependencies
 
@@ -84,7 +84,7 @@ source ./sendgrid.env
 
 ## Hello Email
 
-The following is the minimum needed code to send an email with the [/mail/send Helper](https://github.com/iktakahiro/sendgrid-go/tree/master/helpers/mail) ([here](https://github.com/iktakahiro/sendgrid-go/blob/master/examples/helpers/mail/example.go#L32) is a full example):
+The following is the minimum needed code to send an email with the [/mail/send Helper](https://github.com/iktakahiro/sendgrid-go/v4/tree/master/helpers/mail) ([here](https://github.com/iktakahiro/sendgrid-go/v4/blob/master/examples/helpers/mail/example.go#L32) is a full example):
 
 ### With Mail Helper Class
 
@@ -96,8 +96,8 @@ import (
 	"log"
 	"os"
 
-	"github.com/iktakahiro/sendgrid-go"
-	"github.com/iktakahiro/sendgrid-go/helpers/mail"
+	"github.com/iktakahiro/sendgrid-go/v4"
+	"github.com/iktakahiro/sendgrid-go/v4/helpers/mail"
 )
 
 func main() {
@@ -119,18 +119,18 @@ func main() {
 }
 ```
 
-The `NewEmail` constructor creates a [personalization object](https://sendgrid.com/docs/Classroom/Send/v3_Mail_Send/personalizations.html) for you. [Here](https://github.com/iktakahiro/sendgrid-go/blob/master/examples/helpers/mail/example.go#L28) is an example of how to add to it.
+The `NewEmail` constructor creates a [personalization object](https://sendgrid.com/docs/Classroom/Send/v3_Mail_Send/personalizations.html) for you. [Here](https://github.com/iktakahiro/sendgrid-go/v4/blob/master/examples/helpers/mail/example.go#L28) is an example of how to add to it.
 
 ### Without Mail Helper Class
 
-The following is the minimum needed code to send an email without the /mail/send Helper ([here](https://github.com/iktakahiro/sendgrid-go/blob/master/examples/mail/mail.go#L47) is a full example):
+The following is the minimum needed code to send an email without the /mail/send Helper ([here](https://github.com/iktakahiro/sendgrid-go/v4/blob/master/examples/mail/mail.go#L47) is a full example):
 
 ```go
 package main
 
 import (
 	"fmt"
-	"github.com/iktakahiro/sendgrid-go"
+	"github.com/iktakahiro/sendgrid-go/v4"
 	"log"
 	"os"
 )
@@ -177,7 +177,7 @@ package main
 
 import (
 	"fmt"
-	"github.com/iktakahiro/sendgrid-go"
+	"github.com/iktakahiro/sendgrid-go/v4"
 	"log"
 	"os"
 )
@@ -201,53 +201,53 @@ func main() {
 <a name="inbound"></a>
 # Processing Inbound Email
 
-Please see [our helper](https://github.com/iktakahiro/sendgrid-go/tree/master/helpers/inbound) for utilizing our Inbound Parse webhook.
+Please see [our helper](https://github.com/iktakahiro/sendgrid-go/v4/tree/master/helpers/inbound) for utilizing our Inbound Parse webhook.
 
 <a name="usage"></a>
 # Usage
 
 - [SendGrid Docs](https://sendgrid.com/docs/API_Reference/index.html)
-- [Library Usage Docs](https://github.com/iktakahiro/sendgrid-go/tree/master/USAGE.md)
-- [Example Code](https://github.com/iktakahiro/sendgrid-go/tree/master/examples)
+- [Library Usage Docs](https://github.com/iktakahiro/sendgrid-go/v4/tree/master/USAGE.md)
+- [Example Code](https://github.com/iktakahiro/sendgrid-go/v4/tree/master/examples)
 - [How-to: Migration from v2 to v3](https://sendgrid.com/docs/Classroom/Send/v3_Mail_Send/how_to_migrate_from_v2_to_v3_mail_send.html)
-- [v3 Web API Mail Send Helper](https://github.com/iktakahiro/sendgrid-go/tree/master/helpers/mail/README.md)
+- [v3 Web API Mail Send Helper](https://github.com/iktakahiro/sendgrid-go/v4/tree/master/helpers/mail/README.md)
 
 <a name="use-cases"></a>
 # Use Cases
 
-[Examples of common API use cases](https://github.com/iktakahiro/sendgrid-go/blob/master/USE_CASES.md), such as how to send an email with a transactional template.
+[Examples of common API use cases](https://github.com/iktakahiro/sendgrid-go/v4/blob/master/USE_CASES.md), such as how to send an email with a transactional template.
 
 <a name="announcements"></a>
 # Announcements
 
 Join an experienced and passionate team that focuses on making an impact. [Opportunities abound](https://sendgrid.com/careers) to grow the product - and grow your career! 
 
-Please see our announcement regarding [breaking changes](https://github.com/iktakahiro/sendgrid-go/issues/81). Your support is appreciated!
+Please see our announcement regarding [breaking changes](https://github.com/iktakahiro/sendgrid-go/v4/issues/81). Your support is appreciated!
 
-All updates to this library are documented in our [CHANGELOG](https://github.com/iktakahiro/sendgrid-go/blob/master/CHANGELOG.md) and [releases](https://github.com/iktakahiro/sendgrid-go/releases). You may also subscribe to email [release notifications](https://dx.sendgrid.com/newsletter/go) for releases and breaking changes.
+All updates to this library are documented in our [CHANGELOG](https://github.com/iktakahiro/sendgrid-go/v4/blob/master/CHANGELOG.md) and [releases](https://github.com/iktakahiro/sendgrid-go/v4/releases). You may also subscribe to email [release notifications](https://dx.sendgrid.com/newsletter/go) for releases and breaking changes.
 
 <a name="roadmap"></a>
 # Roadmap
 
-If you are interested in the future direction of this project, please take a look at our open [issues](https://github.com/iktakahiro/sendgrid-go/issues) and [pull requests](https://github.com/iktakahiro/sendgrid-go/pulls). We would love to hear your feedback.
+If you are interested in the future direction of this project, please take a look at our open [issues](https://github.com/iktakahiro/sendgrid-go/v4/issues) and [pull requests](https://github.com/iktakahiro/sendgrid-go/v4/pulls). We would love to hear your feedback.
 
 <a name="contribute"></a>
 # How to Contribute
 
-We encourage contribution to our libraries (you might even score some nifty swag), please see our [CONTRIBUTING](https://github.com/iktakahiro/sendgrid-go/blob/master/CONTRIBUTING.md) guide for details.
+We encourage contribution to our libraries (you might even score some nifty swag), please see our [CONTRIBUTING](https://github.com/iktakahiro/sendgrid-go/v4/blob/master/CONTRIBUTING.md) guide for details.
 
 Quick links:
 
-- [Feature Request](https://github.com/iktakahiro/sendgrid-go/tree/master/CONTRIBUTING.md#feature-request)
-- [Bug Reports](https://github.com/iktakahiro/sendgrid-go/tree/master/CONTRIBUTING.md#submit-a-bug-report)
-- [Sign the CLA to Create a Pull Request](https://github.com/iktakahiro/sendgrid-go/tree/master/CONTRIBUTING.md#cla)
-- [Improvements to the Codebase](https://github.com/iktakahiro/sendgrid-go/tree/master/CONTRIBUTING.md#improvements-to-the-codebase)
-- [Review Pull Requests](https://github.com/iktakahiro/sendgrid-go/blob/master/CONTRIBUTING.md#code-reviews)
+- [Feature Request](https://github.com/iktakahiro/sendgrid-go/v4/tree/master/CONTRIBUTING.md#feature-request)
+- [Bug Reports](https://github.com/iktakahiro/sendgrid-go/v4/tree/master/CONTRIBUTING.md#submit-a-bug-report)
+- [Sign the CLA to Create a Pull Request](https://github.com/iktakahiro/sendgrid-go/v4/tree/master/CONTRIBUTING.md#cla)
+- [Improvements to the Codebase](https://github.com/iktakahiro/sendgrid-go/v4/tree/master/CONTRIBUTING.md#improvements-to-the-codebase)
+- [Review Pull Requests](https://github.com/iktakahiro/sendgrid-go/v4/blob/master/CONTRIBUTING.md#code-reviews)
 
 <a name="troubleshooting"></a>
 # Troubleshooting
 
-Please see our [troubleshooting guide](https://github.com/iktakahiro/sendgrid-go/blob/master/TROUBLESHOOTING.md) for common library issues.
+Please see our [troubleshooting guide](https://github.com/iktakahiro/sendgrid-go/v4/blob/master/TROUBLESHOOTING.md) for common library issues.
 
 <a name="about"></a>
 # About

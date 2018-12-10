@@ -19,7 +19,7 @@ import (
 
 	"github.com/stretchr/testify/assert"
 
-	"github.com/iktakahiro/sendgrid-go/helpers/mail"
+	"github.com/iktakahiro/sendgrid-go/v4/helpers/mail"
 	"github.com/sendgrid/rest"
 )
 

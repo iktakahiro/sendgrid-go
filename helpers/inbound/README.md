@@ -13,7 +13,7 @@
 # Quick Start for Local Testing with Sample Data
 
 ```bash
-git clone https://github.com/iktakahiro/sendgrid-go.git
+git clone https://github.com/iktakahiro/sendgrid-go/v4.git
 cd sendgrid-go
 ```
 
@@ -31,7 +31,7 @@ cd [path to sendgrid-go/helpers/inbound]
 go run inbound.go ./sample_data/default_data.txt http://127.0.0.1:8000/inbound
 ```
 
-More sample data can be found [here](https://github.com/iktakahiro/sendgrid-go/tree/master/helpers/inbound/sample_data).
+More sample data can be found [here](https://github.com/iktakahiro/sendgrid-go/v4/tree/master/helpers/inbound/sample_data).
 
 View the results in the first terminal.
 
@@ -43,7 +43,7 @@ View the results in the first terminal.
 Run the Inbound Parse listener in your terminal:
 
 ```bash
-git clone https://github.com/iktakahiro/sendgrid-go.git
+git clone https://github.com/iktakahiro/sendgrid-go/v4.git
 go run inbound.go
 ```
 
@@ -64,7 +64,7 @@ Next, send an email to [anything]@inbound.yourdomain.com, then look at the termi
 
 Get a [Heroku](https://www.heroku.com) account.
 
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/iktakahiro/sendgrid-go/tree/heroku-deployment)
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/iktakahiro/sendgrid-go/v4/tree/heroku-deployment)
 
 [Setup your MX records.](https://sendgrid.com/docs/Classroom/Basics/Inbound_Parse_Webhook/setting_up_the_inbound_parse_webhook.html#-Setup) Depending on your domain name host, you may need to wait up to 48 hours for the settings to propagate.
 
@@ -78,7 +78,7 @@ Next, send an email to [anything]@inbound.yourdomain.com, then look at your Hero
 While you are waiting for your MX records to propagate, you can test by using the test data sender:
 
 ```bash
-git clone https://github.com/iktakahiro/sendgrid-go.git
+git clone https://github.com/iktakahiro/sendgrid-go/v4.git
 cd sendgrid-go
 go build
 ./sendgrid-go ./helpers/inbound/sample_data/default_data.txt https://[name-of-your-app].herokuapp.com/inbound
@@ -102,11 +102,11 @@ git push heroku heroku-deployment:master
 
 ## inbound.go
 
-This module runs a net/http server, that by default (you can change those settings [here](https://github.com/iktakahiro/sendgrid-go/blob/master/helpers/inbound/conf.json), listens for POSTs on http://localhost:8000. When the server receives the POST, it parses and prints the key/value data.
+This module runs a net/http server, that by default (you can change those settings [here](https://github.com/iktakahiro/sendgrid-go/v4/blob/master/helpers/inbound/conf.json), listens for POSTs on http://localhost:8000. When the server receives the POST, it parses and prints the key/value data.
 
 ## conf.json
 
-This file contains application environment variables (located in [conf.json](https://github.com/iktakahiro/sendgrid-go/blob/master/helpers/inbound/conf.json)).
+This file contains application environment variables (located in [conf.json](https://github.com/iktakahiro/sendgrid-go/v4/blob/master/helpers/inbound/conf.json)).
 
 ## inbound.go & /sample_data
 
@@ -117,11 +117,11 @@ This module, in conjunction with the sample data, is also used to send sample te
 
 Tests are located in the `helpers/inbound` folder:
 
-- [inbound_test.go](https://github.com/iktakahiro/sendgrid-go/blob/master/helpers/inbound/inbound_test.go)
+- [inbound_test.go](https://github.com/iktakahiro/sendgrid-go/v4/blob/master/helpers/inbound/inbound_test.go)
 
-Learn about testing this code [here](https://github.com/iktakahiro/sendgrid-go/blob/master/CONTRIBUTING.md#testing).
+Learn about testing this code [here](https://github.com/iktakahiro/sendgrid-go/v4/blob/master/CONTRIBUTING.md#testing).
 
 <a name="contributing"></a>
 # Contributing
 
-If you would like to contribute to this project, please see our [contributing guide](https://github.com/iktakahiro/sendgrid-go/blob/master/CONTRIBUTING.md). Thanks!
+If you would like to contribute to this project, please see our [contributing guide](https://github.com/iktakahiro/sendgrid-go/v4/blob/master/CONTRIBUTING.md). Thanks!
