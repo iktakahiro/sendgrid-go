@@ -8,7 +8,7 @@ go:
 before_script:
 - go get -u github.com/alecthomas/gometalinter
 - gometalinter --install
-- $HOME/gopath/src/github.com/iktakahiro/sendgrid-go/prism.sh
+- $HOME/gopath/src/github.com/iktakahiro/sendgrid-go/v4/prism.sh
 
 before_install:
   - go get -t -v ./...
