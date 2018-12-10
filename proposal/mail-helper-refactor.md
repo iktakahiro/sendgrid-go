@@ -11,8 +11,8 @@ import (
         "fmt"
         "os"
 
-        "github.com/iktakahiro/sendgrid-go"
-        "github.com/iktakahiro/sendgrid-go/helpers/mail"
+        "github.com/iktakahiro/sendgrid-go/v4"
+        "github.com/iktakahiro/sendgrid-go/v4/helpers/mail"
 )
 
 func main() {
@@ -50,8 +50,8 @@ import (
         "fmt"
         "os"
 
-        "github.com/iktakahiro/sendgrid-go"
-        "github.com/iktakahiro/sendgrid-go/helpers/mail"
+        "github.com/iktakahiro/sendgrid-go/v4"
+        "github.com/iktakahiro/sendgrid-go/v4/helpers/mail"
 )
 
 func main() {
@@ -90,8 +90,8 @@ import (
         "os"
         "time"
 
-        "github.com/iktakahiro/sendgrid-go"
-        "github.com/iktakahiro/sendgrid-go/helpers/mail"
+        "github.com/iktakahiro/sendgrid-go/v4"
+        "github.com/iktakahiro/sendgrid-go/v4/helpers/mail"
 )
 
 func main() {
@@ -164,8 +164,8 @@ import (
         "fmt"
         "os"
 
-        "github.com/iktakahiro/sendgrid-go"
-        "github.com/iktakahiro/sendgrid-go/helpers/mail"
+        "github.com/iktakahiro/sendgrid-go/v4"
+        "github.com/iktakahiro/sendgrid-go/v4/helpers/mail"
 )
 
 func main() {
@@ -311,8 +311,8 @@ import (
         "fmt"
         "os"
 
-        "github.com/iktakahiro/sendgrid-go"
-        "github.com/iktakahiro/sendgrid-go/helpers/mail"
+        "github.com/iktakahiro/sendgrid-go/v4"
+        "github.com/iktakahiro/sendgrid-go/v4/helpers/mail"
 )
 
 func main() {
@@ -410,8 +410,8 @@ import (
         "fmt"
         "os"
 
-        "github.com/iktakahiro/sendgrid-go"
-        "github.com/iktakahiro/sendgrid-go/helpers/mail"
+        "github.com/iktakahiro/sendgrid-go/v4"
+        "github.com/iktakahiro/sendgrid-go/v4/helpers/mail"
 )
 
 func main() {

@@ -5,7 +5,7 @@ import (
 	"log"
 	"os"
 
-	sendgrid "github.com/iktakahiro/sendgrid-go"
+	sendgrid "github.com/iktakahiro/sendgrid-go/v4"
 )
 
 // Returnsalistofallpartnersettings : Returns a list of all partner settings.

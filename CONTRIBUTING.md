@@ -12,7 +12,7 @@ Hello! Thank you for choosing to help contribute to one of the SendGrid open sou
 - [Code Reviews](#code-reviews)
 
 <a name="roadmap"></a>
-We use [Milestones](https://github.com/iktakahiro/sendgrid-go/milestones) to help define current roadmaps, please feel free to grab an issue from the current milestone. Please indicate that you have begun work on it to avoid collisions. Once a PR is made, community review, comments, suggestions and additional PRs are welcomed and encouraged.
+We use [Milestones](https://github.com/iktakahiro/sendgrid-go/v4/milestones) to help define current roadmaps, please feel free to grab an issue from the current milestone. Please indicate that you have begun work on it to avoid collisions. Once a PR is made, community review, comments, suggestions and additional PRs are welcomed and encouraged.
 
 <a name="cla"></a>
 ## CLAs and CCLAs
@@ -52,7 +52,7 @@ Before you decide to create a new issue, please try the following:
 
 ### Please use our Bug Report Template
 
-In order to make the process easier, we've included a [sample bug report template](https://github.com/iktakahiro/sendgrid-go/.github/ISSUE_TEMPLATE) (borrowed from [Ghost](https://github.com/TryGhost/Ghost/)). The template uses [GitHub flavored markdown](https://help.github.com/articles/github-flavored-markdown/) for formatting.
+In order to make the process easier, we've included a [sample bug report template](https://github.com/iktakahiro/sendgrid-go/v4/.github/ISSUE_TEMPLATE) (borrowed from [Ghost](https://github.com/TryGhost/Ghost/)). The template uses [GitHub flavored markdown](https://help.github.com/articles/github-flavored-markdown/) for formatting.
 
 <a name="improvements-to-the-codebase"></a>
 ## Improvements to the Codebase
@@ -71,7 +71,7 @@ We welcome direct contributions to the sendgrid-go code base. Thank you!
 ##### Initial setup: #####
 
 ```bash
-git clone https://github.com/iktakahiro/sendgrid-go.git
+git clone https://github.com/iktakahiro/sendgrid-go/v4.git
 cd sendgrid-go
 ```
 
@@ -90,7 +90,7 @@ source ./sendgrid.env
 ##### Execute: #####
 
 * Check out the documentation for [Web API v3 endpoints](https://sendgrid.com/docs/API_Reference/Web_API_v3/index.html).
-* Review the corresponding [example](https://github.com/iktakahiro/sendgrid-go/blob/master/examples).
+* Review the corresponding [example](https://github.com/iktakahiro/sendgrid-go/v4/blob/master/examples).
 * Update the file
 
 ```bash
@@ -113,9 +113,9 @@ The main function that does the heavy lifting (and external entry point) is `API
 
 All PRs require passing tests before the PR will be reviewed.
 
-All test files are in [`sendgrid_test.go`](https://github.com/iktakahiro/sendgrid-go/tree/master/sendgrid_test.go).
+All test files are in [`sendgrid_test.go`](https://github.com/iktakahiro/sendgrid-go/v4/tree/master/sendgrid_test.go).
 
-For the purposes of contributing to this repo, please update the [`sendgrid_test.go`](https://github.com/iktakahiro/sendgrid-go/tree/master/sendgrid_test.go) file with unit tests as you modify the code.
+For the purposes of contributing to this repo, please update the [`sendgrid_test.go`](https://github.com/iktakahiro/sendgrid-go/v4/tree/master/sendgrid_test.go) file with unit tests as you modify the code.
 
 To run the tests:
 
@@ -142,13 +142,13 @@ Please run your code through:
 
    ```bash
    # Clone your fork of the repo into the current directory
-   git clone https://github.com/iktakahiro/sendgrid-go
+   git clone https://github.com/iktakahiro/sendgrid-go/v4
    
    # Navigate to the newly cloned directory
    cd sendgrid-go
    
    # Assign the original repo to a remote called "upstream"
-   git remote add upstream https://github.com/iktakahiro/sendgrid-go
+   git remote add upstream https://github.com/iktakahiro/sendgrid-go/v4
    ```
 
 2. If you cloned a while ago, get the latest changes from upstream:
